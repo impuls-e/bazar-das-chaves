@@ -7,8 +7,8 @@ module.exports = {
     description:
       'O Bazar das Chaves e Carimbos é uma empresa já conhecida com mais de 20 anos de mercado, com atendimento diferenciado sempre buscando o melhor para o cliente.',
     url: 'https://bazardaschaves.netlify.app/',
-    siteUrl: 'Background image in colored', // No trailing slash allowed!
-    image: `${__dirname}/src/img/icon.png`, // Path to your image you placed in the 'static' folder
+    siteUrl: 'https://bazardaschaves.netlify.app/', // No trailing slash allowed!
+    image: `${__dirname}/src/img/bazar-icon.png`, // Path to your image you placed in the 'static' folder
     twitterUsername: '@$impulsewks',
     author: 'impulseworks',
   },

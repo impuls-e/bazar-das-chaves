@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.geluxeletrica.com.br/sitemap.xml
-Host: https://www.geluxeletrica.com.br
+Sitemap: https://bazardaschaves.netlify.app/
+Host: https://bazardaschaves.netlify.app
