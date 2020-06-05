@@ -10,7 +10,7 @@ import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 export default function Header() {
   const data = useStaticQuery(graphql`
     query ImgHeader {
-      icon: file(relativePath: { eq: "icon.png" }) {
+      icon: file(relativePath: { eq: "bazar-icon.png" }) {
         childImageSharp {
           fixed(height: 70) {
             ...GatsbyImageSharpFixed
@@ -40,7 +40,7 @@ export default function Header() {
         <a href='https://www.instagram.com/bazardaschaves/'>
           <FaInstagram color='#fff' />
         </a>
-        <a href='mailto:contato.gelux@gmail.com'>
+        <a href='mailto:contato.bazardaschaves@gmail.com'>
           <MdEmail color='#fff' />
         </a>
       </div>
