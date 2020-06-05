@@ -11,29 +11,29 @@ export default function Intro() {
         name='Impulse'
         url='https://geluxeletrica.com.br/'
         sameAs={[
-          'https://www.facebook.com/geluxeletrica',
-          'https://instagram.com/geluxeletrica',
+          'https://www.facebook.com/bazardaschaves',
+          'https://instagram.com/bazardaschaves',
         ]}
       />
       <div className='container intro'>
-        <h1>Soluções Completas em Elétrica</h1>
+      <h1>Bazar das Chaves e Carimbos</h1>
+      <h2>Confiança e qualidade</h2>
         <div className='introduction'>
           <ul>
-            <li>Instalação e Manutenção Elétrica em Geral</li>
-            <li>Instalação e Manutenção em Sistemas de Iluminação</li>
-            <li>Projetos Elétricos e Luminotécnicos</li>
-            <li>Projetos e Execução de Serviços CELESC</li>
-            <li>Ensaios, Medições e Estudos Elétricos</li>
+            <li>Empresa</li>
+            <li>Atendimento</li>
+            <li>Serviços</li>
+            <li>Redes Sociais</li>
           </ul>
           <nav>
             <h2>Entre em Contato</h2>
             <h3>Florianópolis - SC</h3>
-            <a href='https://wa.me/5548991815995'>
+            <a href='https://wa.me/554899697-9837'>
               <div className='whats'>
                 <FaWhatsapp></FaWhatsapp>
               </div>
               <span>
-                (48) 99181-5995 <FaExternalLinkAlt />
+                (48) 99697-9837 <FaExternalLinkAlt />
               </span>
             </a>
           </nav>

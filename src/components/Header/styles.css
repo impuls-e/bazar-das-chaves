@@ -30,15 +30,13 @@ header .social-icons svg:hover {
 }
 @media (min-width: 768px) {
   header.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    height: 150px;
+    display: flex;
+    height: 80px;
   }
   header.container .icon {
     display: block !important;
   }
   header.container .logo {
-    justify-self: center;
     grid-column: 2;
     width: 183px !important;
     height: 150px !important;

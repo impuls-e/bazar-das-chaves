@@ -23,10 +23,10 @@ export default function IndexPage() {
   `);
   return (
     <Layout>
-      <SEO title="Soluções Completas em Elétrica" />
+      <SEO title={data.site.siteMetadata.title}  />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Intro />
-      <Footer />
+      {/* <Footer /> */}
     </Layout>
   );
 }

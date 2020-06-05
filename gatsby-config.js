@@ -2,15 +2,15 @@ const config = require('./data/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Bazar das Chaves',
-    titleTemplate: 'Bazar das Chaves · Bazar',
+    title: 'Bazar das Chaves e Carimbos',
+    titleTemplate: 'Bazar das Chaves e Carimbos - Qualidade e Confiança',
     description:
       'O Bazar das Chaves e Carimbos é uma empresa já conhecida com mais de 20 anos de mercado, com atendimento diferenciado sempre buscando o melhor para o cliente.',
-    url: 'https://${site-url}',
-    siteUrl: 'https://${site-url}', // No trailing slash allowed!
+    url: 'https://bazardaschaves.netlify.app/',
+    siteUrl: 'https://bazardaschaves.netlify.app/', // No trailing slash allowed!
     image: `${__dirname}/src/img/icon.png`, // Path to your image you placed in the 'static' folder
-    twitterUsername: '@${twitter}',
-    author: '${authorname}',
+    twitterUsername: '@$impulsewks',
+    author: 'impulseworks',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.geluxeletrica.com.br',
-        sitemap: 'https://www.geluxeletrica.com.br/sitemap.xml',
+        host: '${siteurl}',
+        sitemap: '${siteurl}',
         env: {
           development: {
             policy: [{ userAgent: '*', disallow: ['/'] }],

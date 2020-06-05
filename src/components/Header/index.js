@@ -17,7 +17,7 @@ export default function Header() {
           }
         }
       }
-      image: file(relativePath: { eq: "gelux-logo.png" }) {
+      image: file(relativePath: { eq: "bazar-logo.png" }) {
         childImageSharp {
           fixed(height: 150) {
             ...GatsbyImageSharpFixed
@@ -31,13 +31,13 @@ export default function Header() {
       <Img
         className='logo'
         fixed={data.image.childImageSharp.fixed}
-        alt='Logo da Gelux'
+        alt='Logo do Bazar das Chaves'
       />
       <div className='social-icons'>
-        <a href='https://www.facebook.com/geluxeletrica/'>
+        <a href='https://www.facebook.com/bazardaschaves/'>
           <FaFacebookSquare color='#fff' />
         </a>
-        <a href='https://www.instagram.com/geluxeletrica/'>
+        <a href='https://www.instagram.com/bazardaschaves/'>
           <FaInstagram color='#fff' />
         </a>
         <a href='mailto:contato.gelux@gmail.com'>

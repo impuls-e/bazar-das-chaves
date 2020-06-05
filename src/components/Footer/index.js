@@ -5,7 +5,7 @@ export default function Footer() {
 		<>
 			<footer>
 				<p>Gostaria de fechar um projeto ?</p>
-				<a href='mailto:contato.gelux@gmail.com'>contato.gelux@gmail.com</a>
+				<a href='mailto:contato.bazardaschaves@gmail.com'>contato.bazardaschaves@gmail.com</a>
 			</footer>
 		</>
 	);
