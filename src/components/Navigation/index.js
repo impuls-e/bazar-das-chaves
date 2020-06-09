@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import './styles.js';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 
@@ -39,6 +39,7 @@ const Navigation = () => {
           alt="An image apresentation from current project"
         />
       </Logo>
+      <Link>Bazar das Chaves</Link>
       <HamburguerMenu
         onClick={handleClick}
         className={`hamburguermenu ${clickStyle}  `}
