@@ -14,11 +14,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/img`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -42,7 +43,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        icon: 'src/img/icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/key-icon.png', // This path is relative to the root of the site.
       },
     },
     {

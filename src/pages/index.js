@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
-import Header from "../components/Header";
-import Intro from "../components/Intro";
+import Navigation from "../components/Navigation";
+import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
 export default function IndexPage() {
@@ -24,8 +24,8 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title={data.site.siteMetadata.title}  />
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Intro />
+      <Navigation siteTitle={data.site.siteMetadata.title} />
+      <Hero />
       {/* <Footer /> */}
     </Layout>
   );

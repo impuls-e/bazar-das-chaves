@@ -25,6 +25,6 @@ PageSpeedInsights ${Nome da empresa}                                         |
 
 ### LINKS
 
-Clique em baixo para fazer o teste deste site.
-[PageSpeedTest ${Nome da empresa}](`https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2F${SiteDaEmpresa}%2F&tab=mobile`)
+Clique abaixo para fazer o teste deste site.
+[PageSpeedInsights ${Nome da empresa}](`https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2F${SiteDaEmpresa}%2F&tab=mobile`)
 

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://bazardaschaves.netlify.app/
-Host: https://bazardaschaves.netlify.app

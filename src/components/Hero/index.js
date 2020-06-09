@@ -9,7 +9,7 @@ export default function Intro() {
       <SocialProfileJsonLd
         type='Person'
         name='Impulse'
-        url='https://geluxeletrica.com.br/'
+        url='https://bazardaschaves.netlify.app/'
         sameAs={[
           'https://www.facebook.com/bazardaschaves',
           'https://instagram.com/bazardaschaves',
