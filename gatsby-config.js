@@ -54,6 +54,7 @@ module.exports = {
     },
 
     `gatsby-plugin-advanced-sitemap`,
+    `gatsby-background-image`,
     {
       resolve: 'gatsby-plugin-extract-schema',
       options: {

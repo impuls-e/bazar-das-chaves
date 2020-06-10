@@ -10,7 +10,7 @@ export const Header = styled.header`
   width: 100vw;
   height: 10vh;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
-  background-color: var(--black);
+  background-color: var(--transparency-zero);
   z-index: 2;
 
   a {
@@ -48,19 +48,20 @@ export const Header = styled.header`
       align-items: center;
       height: 50px;
       border-radius: 0 5px 5px 0;
-
+      margin-bottom: 2vh;
 
       a {
 
-        padding: 0vh 1vw;
+        padding: 0vh 2vw;
         font-size: 1.5rem;
+        font-weight: 400;
       }
       
       a:after { 
         content: "";
         position: absolute;
         bottom: -0.2rem;
-        left: 1vw;
+        left: 2vw;
         width: 55%;
         height: 2px;
         background-color: var(--gray);
@@ -119,6 +120,7 @@ export const Header = styled.header`
 
       li {
         padding: 0;
+        margin-bottom: 0;
         a {
           transform: translateX(0);
           visibility: visible;
