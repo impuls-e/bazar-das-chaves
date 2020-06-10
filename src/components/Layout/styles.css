@@ -2,6 +2,7 @@
 :root {
   --secondary: #01a6baeb;
   --primary: #ffa000;
+  --transparency-zero: #0000;
   --transparency: #000000bf;
   --black: #000;
   --white: #fff;
@@ -43,6 +44,13 @@ a {
 
 .container {
   position: relative;
+}
+.background {
+  position: absolute !important;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.6 !important;
 }
 button {
   cursor: pointer;
