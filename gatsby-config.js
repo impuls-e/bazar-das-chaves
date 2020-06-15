@@ -15,6 +15,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,6 +34,15 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content/`,
+      },
+    },
+    `gatsby-plugin-mdx`,
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

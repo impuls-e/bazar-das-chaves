@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const Container = styled.div`
+export const Container = styled.section`
 
 
   padding: 25vh 4vw 5vh;
@@ -18,6 +18,8 @@ export const Container = styled.div`
     color: var(--white);
     text-shadow: #000 1px 1px 1px;
     margin-bottom: 2vh;
+    padding: 0 2vw;
+    line-height: 36px;
   }
   div {
     display: flex;
@@ -25,7 +27,7 @@ export const Container = styled.div`
     justify-content: flex-end;
     align-items: flex-end;
     h2 {
-      max-width: 50vw;
+      max-width: 65vw;
       font-size: 1.5rem;
       text-align: right;
       color: var(--white);

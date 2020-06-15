@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 import { Container } from './styles'
 
-export default function Intro() {
+export default function Hero() {
   const data = useStaticQuery(
     graphql`
       query Image {
