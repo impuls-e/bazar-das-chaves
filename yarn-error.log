@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add gatsby-background-image
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react
 
 PATH: 
-  /home/vinicius/.zinit/polaris/sbin:/home/vinicius/.zinit/polaris/bin:/home/vinicius/.zinit/polaris/usr/sbin:/home/vinicius/.zinit/polaris/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /home/vinicius/.zinit/polaris/sbin:/home/vinicius/.zinit/polaris/bin:/home/vinicius/.zinit/polaris/usr/sbin:/home/vinicius/.zinit/polaris/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vinicius/Android/Sdk/emulator:/home/vinicius/Android/Sdk/tools:/home/vinicius/Android/Sdk/tools/bin:/home/vinicius/Android/Sdk/platform-tools:/home/vinicius/android-studio/bin
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/vinicius/projects/bazardaschaves/node_modules/gatsby-plugin-anchor-links/LICENSE'
+  Error: EACCES: permission denied, mkdir '/home/vinicius/projects/bazardaschaves/node_modules/@babel/compat-data/node_modules/browserslist'
 
 npm manifest: 
   {

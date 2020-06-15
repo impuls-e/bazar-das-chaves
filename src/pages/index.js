@@ -5,7 +5,9 @@ import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import Navigation from "../components/Navigation";
-import Hero from "../components/Hero";
+import Hero from "../containers/Hero";
+import About from "../containers/About";
+import Services from "../containers/Services";
 import Footer from "../components/Footer";
 
 export default function IndexPage() {
@@ -26,6 +28,8 @@ export default function IndexPage() {
       <SEO title={data.site.siteMetadata.title}  />
       <Navigation siteTitle={data.site.siteMetadata.title} />
       <Hero />
+      <About />
+      <Services />
       {/* <Footer /> */}
     </Layout>
   );

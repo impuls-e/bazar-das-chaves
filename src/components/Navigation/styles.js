@@ -41,8 +41,6 @@ export const Header = styled.header`
     box-shadow 2s ease-in-out;
     z-index: -2;
 
-    
-
     li {
       display: flex;
       align-items: center;
@@ -53,7 +51,7 @@ export const Header = styled.header`
       a {
 
         padding: 0vh 2vw;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 400;
       }
       
@@ -64,7 +62,7 @@ export const Header = styled.header`
         left: 2vw;
         width: 55%;
         height: 2px;
-        background-color: var(--gray);
+        background-color: var(--white);
         transition: all 0.4s ease-in-out;
       }
     }
@@ -174,7 +172,7 @@ export const HamburguerMenu = styled.button`
 
   div {
     width: 40px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--primary);
     border-radius: 3px;
     transition: all 0.2s ease-in-out;
     transform: rotate(0);
