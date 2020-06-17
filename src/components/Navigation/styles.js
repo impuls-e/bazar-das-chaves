@@ -115,6 +115,7 @@ export const Header = styled.header`
       z-index: 0;
       align-items: center;
       justify-content: flex-end;
+      background-color: transparent;
 
       li {
         padding: 0;

@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.css';
-export default function Footer() {
+import './styles.js';
+import { Container } from './styles'
+
+const Footer = () => {
 	return (
-		<>
-			<footer>
-				<p>Gostaria de fechar um projeto ?</p>
-				<a href='mailto:contato.bazardaschaves@gmail.com'>contato.bazardaschaves@gmail.com</a>
-			</footer>
-		</>
+		<Container>
+			<p>© 2020 <span>Bazar das Chaves </span> | Por <a href="https://impuls-e.works">Impuls-e</a></p>
+		</Container>
 	);
 }
+export default Footer

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
 
 
-  padding: 10vh 4vw;
+  padding: 10vh 4vw 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,10 +21,38 @@ export const Container = styled.section`
       font-weight: 700;
       margin-bottom: 4vh
     }
+  div {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 2vh;
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 2vh;
+    }
 
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 4vh;
+    a {
+      display: flex;
+      align-items: center;
+      color: var(--black);
+      font-size: 1.2rem;
+      margin-bottom: 2vh;
+      transition: 0.2s all ease-in-out;
+      text-transform: uppercase;
+
+      &:hover {
+        color: var(--primary);
+      }
+      svg {
+        margin-top: 0.3vh;
+        margin-right: 1vw;
+      }
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      margin-bottom: 2vh;
+    }
   }
 
   aside {

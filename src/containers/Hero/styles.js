@@ -42,5 +42,20 @@ export const Container = styled.section`
       z-index: -1;
     }
   }
-  
+  @media(min-width: 765px) {
+    div {
+      h2 {
+        max-width: 30vw;
+
+      }
+    }
+  }
+  @media(min-width: 1024px) {
+    div {
+      h2 {
+        max-width: 27vw;
+
+      }
+    }
+  }
 `

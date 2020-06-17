@@ -16,17 +16,22 @@ export const Container = styled.section`
     var(--white)
   );
   background-size: 28px 28px;
-  h3 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 4vh
+
+  div {
+    h3 {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 4vh;
+        text-align: center;
+      }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 4vh;
     }
 
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 4vh;
   }
-
   aside {
     display: flex;
 
@@ -34,7 +39,20 @@ export const Container = styled.section`
     .gatsby-image-wrapper {
       width: 70vw;
       opacity: 0.8;
+      max-width: 400px;
     }
   }
-  
+  @media(min-width: 765px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width:48%;
+    }
+    aside {
+      width: 50%;
+      justify-content: flex-end;
+    }
+
+  }
 `
