@@ -21,7 +21,7 @@ const Navigation = () => {
 
   const data = useStaticQuery(graphql`
     query ImgHeader {
-      icon: file(relativePath: { eq: "key-icon.png" }) {
+      icon: file(relativePath: { eq: "bazar-icon.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
