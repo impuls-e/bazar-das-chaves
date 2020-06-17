@@ -8,7 +8,7 @@ import Navigation from "../components/Navigation";
 import Hero from "../containers/Hero";
 import About from "../containers/About";
 import Services from "../containers/Services";
-import Footer from "../components/Footer";
+import Contact from "../containers/Contact";
 
 export default function IndexPage() {
   Layout.propTypes = {
@@ -30,7 +30,7 @@ export default function IndexPage() {
       <Hero />
       <About />
       <Services />
-      {/* <Footer /> */}
+      <Contact />
     </Layout>
   );
 }
