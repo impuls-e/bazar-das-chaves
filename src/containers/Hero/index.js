@@ -32,10 +32,24 @@ export default function Hero() {
         ]}
       />
       
-      <Container >
-        <h1>Bazar das Chaves e Carimbos</h1>
+      <Container>
+        <h1 
+          data-sal="slide-up"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          Bazar das Chaves e Carimbos
+        </h1>
         <div>
-          <h2>Confiança e qualidade no centro de Florianópolis</h2>       
+          <h2 
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            Confiança e qualidade no centro de Florianópolis
+          </h2>       
           <Img
             fluid={data.desktop.childImageSharp.fluid}
             alt="An image apresentation from current project"

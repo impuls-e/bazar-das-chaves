@@ -8,16 +8,27 @@
 import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { graphql, useStaticQuery } from 'gatsby';
+import styled from 'styled-components'
 
 import './styles.css';
 
 export default function Layout({ children }) {
-  const data = useStaticQuery(
+  const { mobileImage, desktopImage } = useStaticQuery(
     graphql`
       query BackgroungImage {
-        desktop: file(relativePath: { eq: "background/bg1.png" }) {
+        mobileImage: file(relativePath: { eq: "background/mobile.png" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 100, maxWidth: 765) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      
+        desktopImage: file(
+          relativePath: { eq: "background/desktop.png" }
+        ) {
+          childImageSharp {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -25,15 +36,21 @@ export default function Layout({ children }) {
       }
     `
   );
-  const imageData = data.desktop.childImageSharp.fluid;
+  const sources = [
+    mobileImage.childImageSharp.fluid,
+    {
+      ...desktopImage.childImageSharp.fluid,
+      media: `(min-width: 765px)`,
+    },
+  ]
 
   return (
     <>
       <main>
-        <BackgroundImage
+        <BackgroundImage 
           Tag='section'
           className='background'
-          fluid={imageData}
+          fluid={sources}
           backgroundColor={`#040e18`}
         />
         {children}

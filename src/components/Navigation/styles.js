@@ -53,17 +53,17 @@ export const Header = styled.header`
         padding: 0vh 2vw;
         font-size: 1.4rem;
         font-weight: 400;
-      }
-      
-      a:after { 
-        content: "";
-        position: absolute;
-        bottom: -0.2rem;
-        left: 2vw;
-        width: 55%;
-        height: 2px;
-        background-color: var(--white);
-        transition: all 0.4s ease-in-out;
+        
+        &:after { 
+          content: "";
+          position: absolute;
+          bottom: -0.2rem;
+          left: 2vw;
+          width: 55%;
+          height: 2px;
+          background-color: var(--white);
+          transition: all 0.4s ease-in-out;
+        }
       }
     }
     li:hover {
@@ -124,11 +124,17 @@ export const Header = styled.header`
           transform: translateX(0);
           visibility: visible;
           opacity: 1;
+          margin: 0;
+          padding: 0 1vw;
+
+          &:after { 
+            left: 1.1vw;
+          }
         }
       }
       li:last-child {
         a {
-          padding: 0;
+          padding-right: 0;
           font-size: 1.5rem;        
         }
       } 

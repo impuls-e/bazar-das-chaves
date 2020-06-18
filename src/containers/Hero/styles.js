@@ -5,7 +5,7 @@ export const Container = styled.section`
 
 
   padding: 25vh 4vw 5vh;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -51,6 +51,10 @@ export const Container = styled.section`
     }
   }
   @media(min-width: 1024px) {
+
+    h1 {
+      text-shadow: #000 1px 2px 5px;
+    }
     div {
       h2 {
         max-width: 27vw;

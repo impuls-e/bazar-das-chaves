@@ -35,19 +35,28 @@ const Services = () => {
   return (
     <>    
       <Container id="services">
-        <h3>Nossos Serviços</h3>
-
+        <h3 
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          Nossos Serviços
+        </h3>
         {services.map(service => (
           <div
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
             key={service.node.id}
           >
-              <Img
-                fluid={service.node.frontmatter.imgUrl.childImageSharp.fluid}
-                alt="An image apresentation from current service"
-              />
-              <h4>{service.node.frontmatter.title}</h4>
-              <p>{service.node.frontmatter.description}</p>
-              
+            <Img
+              fluid={service.node.frontmatter.imgUrl.childImageSharp.fluid}
+              alt="An image apresentation from current service"
+            />
+            <h4>{service.node.frontmatter.title}</h4>
+            <p>{service.node.frontmatter.description}</p>
           </div>
         ))} 
       </Container>
