@@ -28,7 +28,7 @@ export default function Hero() {
         url='https://bazardaschaves.netlify.app/'
         sameAs={[
           'https://www.facebook.com/bazardaschaves',
-          'https://instagram.com/bazardaschaves',
+          'https://instagram.com/bazardaschavesecarimbos',
         ]}
       />
       
