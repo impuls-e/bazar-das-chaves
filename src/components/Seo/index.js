@@ -21,10 +21,6 @@ const SEO = () => (
       return (
         <>
           <Helmet title={title} titleTemplate={titleTemplate}>
-            <meta
-              name='google-site-verification'
-              content='FdK0L5prquMXg4djTcVSAth67wA8GbJCciJs9q5ZBew'
-            />
             <meta name='description' content={description} />
             <meta name='image' content={image} />
             <meta charSet='utf-8' />
@@ -39,7 +35,7 @@ const SEO = () => (
             {image && (
               <meta
                 property='og:image'
-                content='https://scontent.ffln1-1.fna.fbcdn.net/v/t1.0-9/91273606_3300776629951515_1865864948798717952_n.png?_nc_cat=111&_nc_sid=85a577&_nc_ohc=TVNGuGO30KwAX8oZxti&_nc_ht=scontent.ffln1-1.fna&oh=9a5862f1adf886cf63972dadd11b4271&oe=5EB0EDF8'
+                content='image'
               />
             )}
 
@@ -47,6 +43,9 @@ const SEO = () => (
 
             {image && (
               <meta property='og:image:type' content='image/jpeg' />
+            )}
+            {image && (
+              <meta name="twitter:site" content="@bazardaschaves"></meta>
             )}
             <meta name='twitter:card' content='summary_large_image' />
             {twitterUsername && (

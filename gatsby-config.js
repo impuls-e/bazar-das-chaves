@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     titleTemplate: config.titleTemplate,
-    description: config.titleTemplate,
+    description: config.description,
     siteUrl: config.siteUrl,// No trailing slash allowed!
     siteImage: config.siteImage, // Path to your image you placed in the 'static' folder
     siteRss: config.siteRss,
