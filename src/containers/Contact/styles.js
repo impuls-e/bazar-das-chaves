@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
 
 
-  padding: 10vh 4vw 0;
+  padding: 6vh 4vw 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,5 +64,19 @@ export const Container = styled.section`
       opacity: 0.8;
     }
   }
-  
+  @media(min-width: 1024px) {      
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    div {
+      width: 31%;  
+    }  
+  }
 `

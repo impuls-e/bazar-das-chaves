@@ -4,19 +4,12 @@ import styled from 'styled-components'
 export const Container = styled.section`
 
 
-  padding: 6vh 4vw 10vh;
+  padding: 6vh 4vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: radial-gradient(
-    circle,
-    #d7d7d7,
-    #d7d7d7 1px,
-    var(--white) 0,
-    var(--white)
-  );
-  background-size: 28px 28px;
-	
+  background-color: #1b1919;
+	color: var(--white);
 
 	p {
 		font-size: 1rem;

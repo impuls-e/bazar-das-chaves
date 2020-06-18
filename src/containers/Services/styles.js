@@ -2,9 +2,7 @@ import styled from 'styled-components'
 
 
 export const Container = styled.section`
-
-
-  padding: 10vh 4vw;
+  padding: 6vh 4vw;
   display: flex;
   flex-direction: column;
   background-color: var(--black);
@@ -50,9 +48,6 @@ export const Container = styled.section`
     div {
       width: 32%;
 
-      h4 {
-        font-size: 1.8rem;
-      }
     &:last-child {
       margin-left: 2%;
     }
