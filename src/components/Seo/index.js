@@ -8,24 +8,23 @@ const SEO = ({ title, description, image, pathname, article }) => (
     render={({
       site: {
         siteMetadata: {
-          defaultTitle,
+          title,
           titleTemplate,
-          defaultDescription,
+          description,
           siteUrl,
-          defaultImage,
+          image,
           twitterUsername,
         },
       },
     }) => {
       const seo = {
-        title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
       return (
         <>
-          <Helmet title={seo.title} titleTemplate={titleTemplate}>
+          <Helmet title={title} titleTemplate={titleTemplate}>
             <meta
               name='google-site-verification'
               content='FdK0L5prquMXg4djTcVSAth67wA8GbJCciJs9q5ZBew'
