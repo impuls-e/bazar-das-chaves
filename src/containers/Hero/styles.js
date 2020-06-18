@@ -5,7 +5,7 @@ export const Container = styled.section`
 
 
   padding: 25vh 4vw 5vh;
-  height: 75vh;
+  height: 85vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;

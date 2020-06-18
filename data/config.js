@@ -9,7 +9,7 @@ const config = {
   googleAnalyticsID: 'UA-169891820-1',
   themeColor: '#000000',
   backgroundColor: '#000000',
-  siteUrl: 'https://bazardaschaves.com.br', 
+  siteUrl: 'https://bazardaschaves.com.br/', 
   author: 'https://impuls-e.works',
 };
 

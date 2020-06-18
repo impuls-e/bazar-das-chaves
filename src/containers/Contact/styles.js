@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
 
 
-  padding: 6vh 4vw 0;
+  padding: 6vh 4vw;
   display: flex;
   flex-direction: column;
   align-items: center;

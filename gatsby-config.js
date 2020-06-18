@@ -5,8 +5,8 @@ module.exports = {
     title: config.siteTitle,
     titleTemplate: config.titleTemplate,
     description: config.titleTemplate,
-    siteUrl: config.url,// No trailing slash allowed!
-    image: config.siteImage, // Path to your image you placed in the 'static' folder
+    siteUrl: config.siteUrl,// No trailing slash allowed!
+    siteImage: config.siteImage, // Path to your image you placed in the 'static' folder
     siteRss: config.siteRss,
     twitterUsername: config.siteTwitter,
     author: config.author,

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaWhatsapp, FaExternalLinkAlt } from 'react-icons/fa';
 import { SocialProfileJsonLd } from 'gatsby-plugin-next-seo';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from "gatsby-image"
