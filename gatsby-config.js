@@ -2,15 +2,14 @@ const config = require('./data/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Bazar das Chaves e Carimbos',
-    titleTemplate: 'Bazar das Chaves e Carimbos - Qualidade e Confiança',
-    description:
-      'O Bazar das Chaves e Carimbos é uma empresa já conhecida com mais de 20 anos de mercado, com atendimento diferenciado sempre buscando o melhor para o cliente.',
-    url: 'https://bazardaschaves.com.br',
-    siteUrl: 'https://bazardaschaves.com.br', // No trailing slash allowed!
-    image: `${__dirname}/src/img/bazar-icon.png`, // Path to your image you placed in the 'static' folder
-    twitterUsername: '@$impulsewks',
-    author: 'impulseworks',
+    title: config.siteTitle,
+    titleTemplate: config.titleTemplate,
+    description: config.titleTemplate,
+    siteUrl: config.siteUrl,// No trailing slash allowed!
+    siteImage: config.siteImage, // Path to your image you placed in the 'static' folder
+    siteRss: config.siteRss,
+    twitterUsername: config.siteTwitter,
+    author: config.author,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-141117092-14',
+        trackingId: config.googleAnalyticsID,
         // this option places the tracking script into the head of the DOM
         head: true,
         // other options
@@ -75,8 +74,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://bazardaschaves.netlify.app/',
-        sitemap: 'https://bazardaschaves.netlify.app/',
+        host: config.siteUrl,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
         env: {
           development: {
             policy: [{ userAgent: '*', disallow: ['/'] }],
