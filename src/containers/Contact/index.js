@@ -28,6 +28,7 @@ const Contact = () => {
           <h4>Contato</h4>
           <a href="tel:(48)3224-1849"><FiPhone/> (48) 3224-1849</a>
           <a href="https://wa.me/5548996979837"><FaWhatsapp/> (48) 99697-9837</a>
+          <a href="https://wa.me/5548999163111"><FaWhatsapp/> (48) 99916-3111</a>
           <a href="mailto:bazardaschavesecarimbos@gmail.com"><AiOutlineMail/> bazardaschavesecarimbos@gmail.com</a>
           <a href="https://www.instagram.com/bazardaschavesecarimbos/"><FiInstagram/> Instagram</a>
         </div>
