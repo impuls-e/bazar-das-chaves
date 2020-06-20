@@ -1,63 +1,51 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const Container = styled.section`
-  padding: 6vh 4vw;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--black);
-  color: var(--white);
-  
-  h3 {
-      width: 100%;
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 4vh;
-      text-align: center;
-    }
+	padding: 6vh 4vw;
+	display: flex;
+	flex-direction: column;
+	background-color: #1b1919;
+	color: var(--white);
 
-  div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2vh;
+	h3 {
+		width: 100%;
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 4vh;
+		text-align: center;
+	}
 
-    .gatsby-image-wrapper {
-      width: 100%;
-      margin-bottom: 2vh;
-    }
-    h4 {
-      font-size: 2rem;
-      margin-bottom: 1vh;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 4vh;
-    }
-  }
+	div {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2vh;
 
-  @media(min-width: 765px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		.gatsby-image-wrapper {
+			width: 100%;
+			margin-bottom: 2vh;
+		}
+		h4 {
+			font-size: 2rem;
+			margin-bottom: 1vh;
+		}
+		p {
+			font-size: 1.2rem;
+			margin-bottom: 4vh;
+		}
+	}
 
-    div {
-      width: 46%;
-    }
-  }
-  @media(min-width: 1024px) {
-    div {
-      width: 32%;
+	@media (min-width: 765px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 
-    &:last-child {
-      margin-left: 2%;
-    }
-      
-    }
-    &::after {
-      content: "";
-      flex: 1 1 auto;
-      margin-left: 2%;
-    }
-  }
-  
-`
+		div {
+			width: 46%;
+		}
+	}
+	@media (min-width: 1024px) {
+		div {
+			width: 32%;
+		}
+	}
+`;
