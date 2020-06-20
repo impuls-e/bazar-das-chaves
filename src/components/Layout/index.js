@@ -5,12 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
-import BackgroundImage from 'gatsby-background-image';
-import { graphql, useStaticQuery } from 'gatsby';
-import styled from 'styled-components'
+import React from "react";
+import BackgroundImage from "gatsby-background-image";
+import { graphql, useStaticQuery } from "gatsby";
 
-import './styles.css';
+import "./styles.css";
 
 export default function Layout({ children }) {
   const { mobileImage, desktopImage } = useStaticQuery(
@@ -23,10 +22,8 @@ export default function Layout({ children }) {
             }
           }
         }
-      
-        desktopImage: file(
-          relativePath: { eq: "background/desktop.png" }
-        ) {
+
+        desktopImage: file(relativePath: { eq: "background/desktop.png" }) {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
@@ -42,14 +39,14 @@ export default function Layout({ children }) {
       ...desktopImage.childImageSharp.fluid,
       media: `(min-width: 765px)`,
     },
-  ]
+  ];
 
   return (
     <>
       <main>
-        <BackgroundImage 
-          Tag='section'
-          className='background'
+        <BackgroundImage
+          Tag="section"
+          className="background"
           fluid={sources}
           backgroundColor={`#040e18`}
         />
