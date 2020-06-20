@@ -1,15 +1,20 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-import { Container } from "./styles";
+import { WhatsButton } from "./styles";
 
 export default function FloatWhatsapp() {
   return (
-    <Container>
-      <a href="https://wa.me/554888394527" target="_blank">
+    <WhatsButton
+      data-sal="slide-up"
+      data-sal-delay="1000"
+      data-sal-easing="ease"
+      data-sal-duration="1000"
+    >
+      <a href="https://wa.me/5548996979837" target="_blank">
         {" "}
         <FaWhatsapp size={40} />
       </a>
-    </Container>
+    </WhatsButton>
   );
 }

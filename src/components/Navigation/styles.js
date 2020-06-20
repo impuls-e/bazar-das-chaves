@@ -1,17 +1,23 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Link } from 'gatsby'
+import { Link } from "gatsby";
+
+export const Container = styled.section`
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
+  background-color: var(--transparency-zero);
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 10vh;
+`;
 
 export const Header = styled.header`
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
-  height: 10vh;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
-  background-color: var(--transparency-zero);
-  z-index: 2;
+  max-width: 1350px;
+  margin: 0 auto;
+  height: 100%;
 
   a {
     text-decoration: none;
@@ -20,7 +26,6 @@ export const Header = styled.header`
     font-weight: 900;
     text-shadow: #000 1px 1px 1px;
     transition: all 0.4s ease-in-out;
-
 
     &:hover {
       color: var(--primary);
@@ -38,7 +43,7 @@ export const Header = styled.header`
     height: 25vh;
     width: 100vw;
     transition: opacity 0.8s ease-out, visibility 0.2s ease-out,
-    box-shadow 2s ease-in-out;
+      box-shadow 2s ease-in-out;
     z-index: -2;
 
     li {
@@ -49,12 +54,11 @@ export const Header = styled.header`
       margin-bottom: 2vh;
 
       a {
-
         padding: 0vh 2vw;
         font-size: 1.4rem;
         font-weight: 400;
-        
-        &:after { 
+
+        &:after {
           content: "";
           position: absolute;
           bottom: -0.2rem;
@@ -67,29 +71,28 @@ export const Header = styled.header`
       }
     }
     li:hover {
-      a:after{
+      a:after {
         background-color: var(--primary);
       }
     }
-    li:nth-child(1){ 
+    li:nth-child(1) {
       a {
         transition: color 0.2s ease-in, visibility 0.4s ease-in-out,
-        transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-      } 
+          transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+      }
     }
     li:nth-child(2) {
       a {
         transition: color 0.2s ease-in, visibility 0.6s ease-in-out,
-        transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+          transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
       }
     }
-    li:nth-child(3) { 
+    li:nth-child(3) {
       a {
         transition: color 0.2s ease-in, visibility 0.8s ease-in-out,
-        transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+          transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
       }
     }
-    
   }
   ul.click {
     visibility: visible;
@@ -102,7 +105,7 @@ export const Header = styled.header`
       }
     }
   }
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
     a {
       margin-left: 2vw;
     }
@@ -127,7 +130,7 @@ export const Header = styled.header`
           margin: 0;
           padding: 0 1vw;
 
-          &:after { 
+          &:after {
             left: 1.1vw;
           }
         }
@@ -135,13 +138,11 @@ export const Header = styled.header`
       li:last-child {
         a {
           padding-right: 0;
-          font-size: 1.5rem;        
         }
-      } 
+      }
     }
   }
-
-`
+`;
 
 export const HamburguerMenu = styled.button`
   background-color: transparent;
@@ -173,7 +174,6 @@ export const HamburguerMenu = styled.button`
   &:hover {
     div {
       border: 2px solid var(--primary);
-
     }
   }
 
@@ -190,11 +190,10 @@ export const HamburguerMenu = styled.button`
       visibility: visible;
     }
   }
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
     display: none;
   }
 `;
-
 
 export const Logo = styled(Link)`
   width: 48px;
@@ -215,5 +214,4 @@ export const MenuLink = styled(AnchorLink)`
   transform: translateX(-10vw);
   visibility: hidden;
   opacity: 0;
-
 `;

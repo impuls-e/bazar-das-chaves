@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const WhatsButton = styled.div`
   position: fixed;
   width: 60px;
   height: 60px;
   bottom: 40px;
-  right: 40px;
+  right: 15px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;

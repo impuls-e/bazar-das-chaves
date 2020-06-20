@@ -1,9 +1,9 @@
-import React from 'react';
-import { SocialProfileJsonLd } from 'gatsby-plugin-next-seo';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from "gatsby-image"
+import React from "react";
+import { SocialProfileJsonLd } from "gatsby-plugin-next-seo";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
-import { Container } from './styles'
+import { Container, HeroContent } from "./styles";
 
 export default function Hero() {
   const data = useStaticQuery(
@@ -11,7 +11,7 @@ export default function Hero() {
       query Image {
         desktop: file(relativePath: { eq: "bazar-icon.png" }) {
           childImageSharp {
-            fluid (maxWidth: 256) {
+            fluid(maxWidth: 256) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -22,38 +22,40 @@ export default function Hero() {
   return (
     <>
       <SocialProfileJsonLd
-        type='Person'
-        name='Impulse'
-        url='https://bazardaschaves.netlify.app/'
+        type="Person"
+        name="Impulse"
+        url="https://bazardaschaves.netlify.app/"
         sameAs={[
-          'https://www.facebook.com/bazardaschaves',
-          'https://instagram.com/bazardaschavesecarimbos',
+          "https://www.facebook.com/bazardaschaves",
+          "https://instagram.com/bazardaschavesecarimbos",
         ]}
       />
-      
+
       <Container>
-        <h1 
-          data-sal="slide-up"
-          data-sal-delay="200"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
-        >
-          Bazar das Chaves e Carimbos
-        </h1>
-        <div>
-          <h2 
+        <HeroContent>
+          <h1
             data-sal="slide-up"
             data-sal-delay="200"
             data-sal-easing="ease"
             data-sal-duration="1000"
           >
-            Confiança e qualidade no centro de Florianópolis
-          </h2>       
-          <Img
-            fluid={data.desktop.childImageSharp.fluid}
-            alt="An image apresentation from current project"
-          />
-        </div>     
+            Bazar das Chaves e Carimbos
+          </h1>
+          <div>
+            <h2
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Confiança e qualidade no centro de Florianópolis
+            </h2>
+            <Img
+              fluid={data.desktop.childImageSharp.fluid}
+              alt="An image apresentation from current project"
+            />
+          </div>
+        </HeroContent>
       </Container>
     </>
   );

@@ -9,7 +9,6 @@ import React from "react";
 import BackgroundImage from "gatsby-background-image";
 import { graphql, useStaticQuery } from "gatsby";
 
-import FloatWhatsapp from "../FloatWhatsapp";
 import "./styles.css";
 
 export default function Layout({ children }) {
@@ -51,7 +50,6 @@ export default function Layout({ children }) {
           fluid={sources}
           backgroundColor={`#040e18`}
         />
-        <FloatWhatsapp />
         {children}
       </main>
     </>
