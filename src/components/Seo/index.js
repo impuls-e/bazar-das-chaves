@@ -73,7 +73,7 @@ const query = graphql`
     site {
       siteMetadata {
         title
-        titleTemplate
+        descriptionTemplate
         description
         siteUrl
         siteImage
