@@ -1,7 +1,7 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import { Helmet } from "react-helmet";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 const SEO = () => (
   <StaticQuery
     query={query}
@@ -9,7 +9,7 @@ const SEO = () => (
       site: {
         siteMetadata: {
           title,
-          titleTemplate,
+          descriptionTemplate,
           description,
           siteUrl,
           siteImage,
@@ -17,45 +17,38 @@ const SEO = () => (
         },
       },
     }) => {
-      const image = `${siteUrl}${siteImage}`
+      const image = `${siteUrl}${siteImage}`;
       return (
         <>
-          <Helmet title={title} titleTemplate={titleTemplate}>
-            <meta name='description' content={description} />
-            <meta name='image' content={image} />
-            <meta charSet='utf-8' />
-            {siteUrl && <meta property='og:url' content={siteUrl} />}
-            
-            <meta property='og:type' content='website' />
+          <Helmet title={title} descriptionTemplate={descriptionTemplate}>
+            <meta name="description" content={description} />
+            <meta name="image" content={image} />
+            <meta charSet="utf-8" />
+            {siteUrl && <meta property="og:url" content={siteUrl} />}
 
-            {title && <meta property='og:title' content={title} />}
+            <meta property="og:type" content="website" />
+
+            {title && <meta property="og:title" content={title} />}
             {description && (
-              <meta property='og:description' content={description} />
+              <meta property="og:description" content={description} />
             )}
-            {image && (
-              <meta
-                property='og:image'
-                content='image'
-              />
-            )}
+            {image && <meta property="og:image" content="image" />}
 
-            {image && <meta property='og:image:url' content={image} />}
+            {image && <meta property="og:image:url" content={image} />}
 
-            {image && (
-              <meta property='og:image:type' content='image/jpeg' />
-            )}
+            {image && <meta property="og:image:type" content="image/jpeg" />}
             {image && (
               <meta name="twitter:site" content="@bazardaschaves"></meta>
             )}
-            <meta name='twitter:card' content='summary_large_image' />
+            <meta name="twitter:card" content="summary_large_image" />
             {twitterUsername && (
-              <meta name='twitter:creator' content={twitterUsername} />
+              <meta name="twitter:creator" content={twitterUsername} />
             )}
-            {title && <meta name='twitter:title' content={title} />}
+            {title && <meta name="twitter:title" content={title} />}
             {description && (
-              <meta name='twitter:description' content={description} />
+              <meta name="twitter:description" content={description} />
             )}
-            {image && <meta name='twitter:image' content={image} />}
+            {image && <meta name="twitter:image" content={image} />}
           </Helmet>
         </>
       );
@@ -79,12 +72,12 @@ const query = graphql`
   query SEO {
     site {
       siteMetadata {
-        title,
-        titleTemplate,
-        description,
-        siteUrl,
-        siteImage,
-        twitterUsername,
+        title
+        titleTemplate
+        description
+        siteUrl
+        siteImage
+        twitterUsername
       }
     }
   }
