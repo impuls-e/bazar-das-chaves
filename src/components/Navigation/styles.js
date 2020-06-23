@@ -21,11 +21,12 @@ export const Header = styled.header`
 
   a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--white);
     font-weight: 900;
     text-shadow: #000 1px 1px 1px;
     transition: all 0.4s ease-in-out;
+    font-family: "Blinker-Bold", sans-serif;
 
     &:hover {
       color: var(--primary);
