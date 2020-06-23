@@ -60,7 +60,14 @@ module.exports = {
         lang: "pt-BR",
       },
     },
-
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Blinker:400,700"],
+        },
+      },
+    },
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-background-image`,
     {

@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "Blinker-Bold";
-  src: url("../../fonts/Blinker-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Blinker-Regular";
-  src: url("../../fonts/Blinker-Regular.ttf");
-}
-
 :root {
   --secondary: #01a6baeb;
   --primary: #ffa000;
@@ -50,14 +40,13 @@ h4 {
 p,
 a {
   font-size: 1.2rem;
-  font-family: "Blinker-Regular", sans-serif;
 }
 
 body,
 input,
 button,
 a {
-  font-family: "Blinker-Bold", sans-serif;
+  font-family: "Blinker", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
