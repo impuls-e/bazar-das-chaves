@@ -21,7 +21,7 @@ export const Header = styled.header`
 
   a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--white);
     font-weight: 900;
     text-shadow: #000 1px 1px 1px;

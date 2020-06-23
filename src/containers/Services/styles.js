@@ -38,7 +38,6 @@ export const ServiceContent = styled.div`
       margin-bottom: 1vh;
     }
     p {
-      font-family: "Blinker-Regular", sans-serif;
       margin-bottom: 4vh;
     }
   }
