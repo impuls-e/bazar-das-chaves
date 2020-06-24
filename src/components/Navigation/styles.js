@@ -45,6 +45,7 @@ export const Header = styled.header`
     transition: opacity 0.8s ease-out, visibility 0.2s ease-out,
       box-shadow 2s ease-in-out;
     z-index: -2;
+    left: -2vw;
 
     li {
       display: flex;
@@ -151,7 +152,6 @@ export const HamburguerMenu = styled.button`
   justify-content: space-evenly;
   width: 48px;
   height: 48px;
-  margin-right: 4vw;
 
   &.click {
     div:nth-child(1) {
