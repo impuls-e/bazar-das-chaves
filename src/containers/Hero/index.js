@@ -37,7 +37,7 @@ export default function Hero() {
             Bazar das <span>Chaves</span> <br></br>e <span>Carimbos</span>
           </h1>
           <div>
-            <h2>Confiança e qualidade no centro de Florianópolis</h2>
+            <h2>Confiança e qualidade em Florianopolis</h2>
             <Img
               fluid={data.desktop.childImageSharp.fluid}
               alt="An image apresentation from current project"
