@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 25vh 4vw 5vh;
   height: 85vh;
   background: linear-gradient(100deg, #42290085, #000000c9 22.71%);
 
@@ -12,20 +11,24 @@ export const Container = styled.section`
 `;
 
 export const HeroContent = styled.div`
+  padding: 25vh 4vw 5vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
-  max-width: 1350px;
+  max-width: 1450px;
   margin: 0 auto;
 
   h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-align: center;
     color: var(--white);
     text-shadow: #000 1px 1px 1px;
     margin-bottom: 2vh;
-    padding: 0 2vw;
+    line-height: 54px;
+  }
+  span {
+    color: var(--primary);
   }
   div {
     display: flex;
@@ -48,6 +51,11 @@ export const HeroContent = styled.div`
     }
   }
   @media (min-width: 765px) {
+    h1 {
+      font-size: 6rem;
+
+      line-height: 90px;
+    }
     div {
       h2 {
         max-width: 30vw;
@@ -56,6 +64,8 @@ export const HeroContent = styled.div`
   }
   @media (min-width: 1024px) {
     h1 {
+      font-size: 7rem;
+
       text-shadow: #000 1px 2px 5px;
     }
     div {

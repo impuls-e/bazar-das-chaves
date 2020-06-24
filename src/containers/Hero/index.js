@@ -33,7 +33,9 @@ export default function Hero() {
 
       <Container>
         <HeroContent>
-          <h1>Bazar das Chaves e Carimbos</h1>
+          <h1>
+            Bazar das <span>Chaves</span> <br></br>e <span>Carimbos</span>
+          </h1>
           <div>
             <h2>Confiança e qualidade no centro de Florianópolis</h2>
             <Img

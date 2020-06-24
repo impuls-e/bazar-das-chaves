@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 6vh 4vw 0;
   background-image: radial-gradient(
     circle,
     #d7d7d7,
@@ -14,10 +13,11 @@ export const Container = styled.section`
 `;
 
 export const ContactContent = styled.div`
+  padding: 6vh 4vw 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1350px;
+  max-width: 1450px;
   margin: 0 auto;
   h3 {
     margin-bottom: 4vh;
@@ -75,5 +75,12 @@ export const ContactContent = styled.div`
     div {
       width: 31%;
     }
+  }
+`;
+export const Map = styled.div`
+  padding: 2vh 4vw;
+  max-width: 1450px;
+  margin: 0 auto;
+  iframe {
   }
 `;

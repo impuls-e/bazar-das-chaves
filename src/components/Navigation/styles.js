@@ -12,10 +12,11 @@ export const Container = styled.section`
 `;
 
 export const Header = styled.header`
+  padding: 0 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1350px;
+  max-width: 1450px;
   margin: 0 auto;
   height: 100%;
 
@@ -39,7 +40,6 @@ export const Header = styled.header`
     background: var(--black);
     align-items: flex-end;
     justify-content: center;
-    padding: 0 4vw;
     height: 25vh;
     width: 100vw;
     transition: opacity 0.8s ease-out, visibility 0.2s ease-out,
@@ -106,9 +106,6 @@ export const Header = styled.header`
     }
   }
   @media (min-width: 1024px) {
-    a {
-      margin-left: 2vw;
-    }
     ul {
       opacity: 1;
       visibility: visible;
@@ -198,8 +195,8 @@ export const HamburguerMenu = styled.button`
 export const Logo = styled(Link)`
   width: 48px;
   height: 48px;
-  margin-left: 4vw;
   display: flex;
+  margin-right: 1vw;
 
   .gatsby-image-wrapper {
     width: 100%;

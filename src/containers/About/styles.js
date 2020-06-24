@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 6vh 4vw;
   color: var(--white);
   background-color: var(--black);
 `;
@@ -10,8 +9,9 @@ export const AboutContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1350px;
+  max-width: 1450px;
   margin: 0 auto;
+  padding: 6vh 4vw;
 
   div {
     h3 {

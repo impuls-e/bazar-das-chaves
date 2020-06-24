@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 6vh 4vw;
   background-image: radial-gradient(
     circle,
     #d7d7d7,
@@ -14,8 +13,10 @@ export const Container = styled.section`
 `;
 
 export const ServiceContent = styled.div`
+  padding: 6vh 4vw;
+
   height: 100%;
-  max-width: 1350px;
+  max-width: 1450px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
