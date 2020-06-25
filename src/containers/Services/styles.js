@@ -34,6 +34,7 @@ export const ServiceContent = styled.div`
     .gatsby-image-wrapper {
       width: 100%;
       margin-bottom: 2vh;
+      background-color: var(--white);
     }
     h4 {
       margin-bottom: 1vh;
@@ -55,6 +56,14 @@ export const ServiceContent = styled.div`
   @media (min-width: 1024px) {
     div {
       width: 32%;
+
+      .gatsby-image-wrapper {
+        height: 250px;
+
+        img {
+          object-fit: fill !important;
+        }
+      }
     }
   }
 `;
