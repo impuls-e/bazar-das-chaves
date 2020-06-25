@@ -7,6 +7,7 @@ import FloatWhatsapp from "../components/FloatWhatsapp";
 import Hero from "../containers/Hero";
 import About from "../containers/About";
 import Services from "../containers/Services";
+import Portfolio from "../containers/Portfolio";
 import Contact from "../containers/Contact";
 
 export default function IndexPage() {
@@ -18,6 +19,7 @@ export default function IndexPage() {
       <Services />
       <FloatWhatsapp />
       <About />
+      <Portfolio />
       <Contact />
     </Layout>
   );

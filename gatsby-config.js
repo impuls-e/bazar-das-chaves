@@ -68,6 +68,14 @@ module.exports = {
         },
       },
     },
+    {
+      // For development
+      // resolve: `..`,
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `33187053575`,
+      },
+    },
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-background-image`,
     {

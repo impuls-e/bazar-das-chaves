@@ -18,7 +18,7 @@ const Contact = () => {
             data-sal-easing="ease"
             data-sal-duration="1000"
           >
-            Entre em Contato
+            Solicite um Orçamento
           </h3>
           <div
             data-sal="slide-up"

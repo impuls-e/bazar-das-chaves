@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background-image: radial-gradient(
-    circle,
-    #d7d7d7,
-    #d7d7d7 1px,
-    var(--white) 0,
-    var(--white)
-  );
-  background-size: 28px 28px;
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
 `;
 export const FooterContent = styled.div`
   padding: 6vh 4vw;

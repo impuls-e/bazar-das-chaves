@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background-image: radial-gradient(
-    circle,
-    #d7d7d7,
-    #d7d7d7 1px,
-    var(--white) 0,
-    var(--white)
-  );
-  background-size: 28px 28px;
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
 `;
 
 export const ContactContent = styled.div`
@@ -34,7 +27,7 @@ export const ContactContent = styled.div`
     a {
       display: flex;
       align-items: center;
-      color: var(--black);
+      color: var(--white);
       margin-bottom: 2vh;
       transition: 0.2s all ease-in-out;
       text-transform: uppercase;
