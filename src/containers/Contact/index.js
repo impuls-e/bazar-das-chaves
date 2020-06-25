@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createRef, useState, useEffect } from "react";
 
 import Footer from "../../components/Footer";
 import { Container, ContactContent, Map } from "./styles";
@@ -8,6 +8,33 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const container = createRef();
+
+  useEffect(() => {
+    const videoObserver = new IntersectionObserver(onVideoIntersection, {
+      rootMargin: "100px 0px",
+      threshold: 0.25,
+    });
+    if (window && "IntersectionObserver" in window) {
+      if (container && container.current) {
+        videoObserver.observe(container.current);
+      }
+    } else {
+      setShowVideo(true);
+    }
+  }, [container]);
+  function onVideoIntersection(entries) {
+    if (!entries || entries.length <= 0) {
+      return;
+    }
+
+    if (entries[0].isIntersecting) {
+      setShowVideo(true);
+      videoObserver.disconnect();
+    }
+  }
   return (
     <>
       <Container id="contato">
@@ -63,16 +90,20 @@ const Contact = () => {
             <p>Domingo: Fechado.</p>
           </div>
         </ContactContent>
-        <Map>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.886729873184!2d-48.55313458461728!3d-27.59704112873844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527382034abb0ab%3A0x63956861f012973d!2sBazar%20das%20Chaves%20e%20Carimbos!5e0!3m2!1sen!2sbr!4v1593030454663!5m2!1sen!2sbr"
-            width="100%"
-            height="450"
-            frameborder="0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+        <Map ref={container}>
+          {showVideo ? (
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.886729873184!2d-48.55313458461728!3d-27.59704112873844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527382034abb0ab%3A0x63956861f012973d!2sBazar%20das%20Chaves%20e%20Carimbos!5e0!3m2!1sen!2sbr!4v1593030454663!5m2!1sen!2sbr"
+              allowfullscreen=""
+              width="100%"
+              height="450"
+              frameborder="0"
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          ) : (
+            undefined
+          )}
         </Map>
       </Container>
       <Footer />
