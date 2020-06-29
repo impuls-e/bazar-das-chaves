@@ -34,7 +34,7 @@ export const ServiceContent = styled.div`
     .gatsby-image-wrapper {
       width: 100%;
       margin-bottom: 2vh;
-      max-height: 200px;
+      max-height: 400px;
       background-color: var(--white);
 
       img {
