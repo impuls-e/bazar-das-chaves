@@ -38,7 +38,7 @@ export const ServiceContent = styled.div`
       background-color: var(--white);
 
       img {
-        object-fit: contain;
+        object-fit: contain !important;
       }
     }
     h4 {
