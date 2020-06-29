@@ -22,6 +22,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: config.googleAnalyticsID,
@@ -30,15 +37,8 @@ module.exports = {
         // other options
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/content/`,
-      },
-    },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-mdx`,
 
     {
@@ -100,6 +100,8 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-offline`,
+
     // animation
     {
       resolve: `gatsby-plugin-scroll-reveal`,
