@@ -1,3 +1,4 @@
+/* eslint-disable graphql/template-strings */
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
@@ -5,19 +6,28 @@ import Img from "gatsby-image";
 import { Container, AboutContent } from "./styles";
 
 const About = () => {
-  const data = useStaticQuery(
-    graphql`
-      query About {
-        file(relativePath: { eq: "about.png" }) {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp
+  const data = useStaticQuery(graphql`
+    query AboutImage {
+      allInstaNode(
+        sort: { fields: timestamp, order: DESC }
+        limit: 1
+        filter: { caption: { regex: "/#bazardaschaveslocal/" } }
+      ) {
+        edges {
+          node {
+            localFile {
+              childImageSharp {
+                fluid(quality: 70, maxWidth: 600, maxHeight: 600) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
+
   return (
     <>
       <Container id="sobre">
@@ -43,7 +53,9 @@ const About = () => {
             data-sal-duration="1000"
           >
             <Img
-              fluid={data.file.childImageSharp.fluid}
+              fluid={
+                data.allInstaNode.edges[0].node.localFile.childImageSharp.fluid
+              }
               alt="An image apresentation from current project"
             />
           </aside>

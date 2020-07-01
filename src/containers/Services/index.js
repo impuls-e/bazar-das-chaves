@@ -7,19 +7,20 @@ import { Container, ServiceContent } from "./styles";
 
 const Services = () => {
   const data = useStaticQuery(graphql`
-    query ServicesQuery {
-      allMdx(filter: { frontmatter: { tag: { eq: "services" } } }) {
+    query ServicesImages {
+      allInstaNode(
+        sort: { fields: timestamp, order: DESC }
+        limit: 12
+        filter: { caption: { regex: "/#bazardaschavesservicos/" } }
+      ) {
         edges {
           node {
             id
-            frontmatter {
-              title
-              description
-              imgUrl {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
+            caption
+            localFile {
+              childImageSharp {
+                fluid(quality: 70, maxWidth: 600, maxHeight: 600) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
@@ -29,7 +30,14 @@ const Services = () => {
     }
   `);
 
-  const services = data.allMdx.edges;
+  const services = data.allInstaNode.edges;
+  const extractTitleFromCaption = (caption) =>
+    caption.substr(0, caption.indexOf("\n"));
+  const extractTDescriptionFromCaption = (caption) =>
+    caption.substr(
+      caption.indexOf("\n"),
+      caption.indexOf("\n#") - caption.indexOf("\n")
+    );
 
   return (
     <>
@@ -52,11 +60,11 @@ const Services = () => {
               key={service.node.id}
             >
               <Img
-                fluid={service.node.frontmatter.imgUrl.childImageSharp.fluid}
+                fluid={service.node.localFile.childImageSharp.fluid}
                 alt="An image apresentation from current service"
               />
-              <h4>{service.node.frontmatter.title}</h4>
-              <p>{service.node.frontmatter.description}</p>
+              <h4>{extractTitleFromCaption(service.node.caption)}</h4>
+              <p>{extractTDescriptionFromCaption(service.node.caption)}</p>
             </div>
           ))}
         </ServiceContent>

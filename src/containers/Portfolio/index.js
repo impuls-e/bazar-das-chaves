@@ -10,7 +10,7 @@ import { Container, PortfolioContent, Insta } from "./styles";
 const Portfolio = ({ limit }) => {
   const data = useStaticQuery(graphql`
     query Portfoliosquery {
-      allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 12) {
+      allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 3) {
         edges {
           node {
             id
@@ -40,7 +40,7 @@ const Portfolio = ({ limit }) => {
             data-sal-easing="ease"
             data-sal-duration="1000"
           >
-            Siga-nos no Instagram{" "}
+            Saiba mais no nosso Instagram{" "}
             <a
               class="insta"
               href="https://www.instagram.com/bazardaschavesecarimbos/"
@@ -79,7 +79,6 @@ const Portfolio = ({ limit }) => {
                   )}
                 </Insta>
               </a>
-              <p>{portfolio.node.caption}</p>
             </div>
           ))}
         </PortfolioContent>

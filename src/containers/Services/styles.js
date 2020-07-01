@@ -52,23 +52,17 @@ export const ServiceContent = styled.div`
   @media (min-width: 765px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     div {
       width: 46%;
+    }
+    div + div {
+      margin: 0 0.5vw;
     }
   }
   @media (min-width: 1024px) {
     div {
       width: 32%;
-
-      .gatsby-image-wrapper {
-        max-height: 250px;
-
-        img {
-          object-fit: fill !important;
-        }
-      }
     }
   }
 `;

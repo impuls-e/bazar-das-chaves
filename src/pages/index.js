@@ -19,7 +19,7 @@ export default function IndexPage() {
       <Services />
       <FloatWhatsapp />
       <About />
-      <Portfolio />
+      <Portfolio limit={3} />
       <Contact />
     </Layout>
   );
