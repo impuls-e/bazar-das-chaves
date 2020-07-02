@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  height: 85vh;
+  height: 100vh;
   background: linear-gradient(100deg, #42290085, #000000c9 22.71%);
 
   @media (min-width: 1024px) {
-    height: 100vh;
     background: linear-gradient(100deg, #42290085, transparent 22.71%);
   }
 `;
