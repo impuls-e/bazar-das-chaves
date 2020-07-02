@@ -23,10 +23,15 @@ export const PortfolioContent = styled.div`
     width: 100%;
     margin-bottom: 4vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .insta {
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 1.9rem;
+    margin-left: 1vw;
     font-weight: 700;
     transition: 0.2s all ease-in-out;
 
@@ -72,6 +77,9 @@ export const PortfolioContent = styled.div`
     }
   }
   @media (min-width: 1024px) {
+    h3 {
+      flex-direction: row;
+    }
     div {
       width: 32%;
     }
